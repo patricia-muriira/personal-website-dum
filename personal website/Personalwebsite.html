@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>John Doe - Software Developer</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f8f8f8;
+      }
+
+      .content-wrapper {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 36px;
+      }
+
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav ul li {
+        display: inline-block;
+        margin-right: 20px;
+      }
+
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+      }
+
+      main {
+        flex: 1;
+        padding: 20px;
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        position: sticky;
+        bottom: 0;
+        width: 100%;
+      }
+
+      /* Additional styles for the developer's information */
+
+      .avatar {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        margin-bottom: 20px;
+      }
+
+      .skills {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+      }
+
+      .skills p {
+        background-color: #333;
+        color: #fff;
+        padding: 6px 12px;
+        border-radius: 20px;
+        margin: 5px;
+        font-size: 14px;
+      }
+
+      .project {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+      }
+
+      .project h3 {
+        margin-top: 0;
+        margin-bottom: 10px;
+      }
+
+      .project img {
+        width: 100%;
+        max-height: 300px;
+        object-fit: cover;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .contact-links a {
+        margin-right: 10px;
+        color: #333;
+        text-decoration: none;
+      }
+
+      /* Media queries for responsiveness */
+
+      @media screen and (max-width: 768px) {
+        header h1 {
+          font-size: 28px;
+        }
+
+        nav ul li a {
+          font-size: 16px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content-wrapper">
+      <header>
+        <h1>John Doe</h1>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <img
+          class="avatar"
+          src="https://via.placeholder.com/150"
+          alt="John Doe"
+        />
+        <h2>Hi there, I'm John!</h2>
+        <p>
+          I'm a passionate software developer with a keen interest in building
+          web applications and solving real-world problems. I have experience
+          working with various technologies and frameworks, and I'm always eager
+          to learn and take on new challenges.
+        </p>
+        <div class="skills">
+          <p>HTML</p>
+          <p>CSS</p>
+          <p>JavaScript</p>
+          <p>React</p>
+          <p>Node.js</p>
+          <p>Express.js</p>
+          <p>MongoDB</p>
+          <p>Python</p>
+          <p>Django</p>
+          <p>Git</p>
+        </div>
+
+        <h2>Portfolio</h2>
+
+        <div class="project">
+          <img src="https://via.placeholder.com/400" alt="Project 1" />
+          <h3>Web Application - E-commerce Store</h3>
+          <p>
+            This project is an e-commerce web application built with React for
+            the frontend and Node.js with Express for the backend. It utilizes
+            MongoDB as the database to store product information and user data.
+            Users can browse products, add items to their cart, and proceed with
+            checkout.
+          </p>
+        </div>
+
+        <div class="project">
+          <img src="https://via.placeholder.com/400" alt="Project 2" />
+          <h3>Mobile App - Task Manager</h3>
+          <p>
+            The Task Manager mobile app was developed using React Native,
+            allowing users to create, track, and manage their daily tasks
+            easily. The app features a user-friendly interface and local data
+            storage for offline access to task lists.
+          </p>
+        </div>
+
+        <div class="project">
+          <img src="https://via.placeholder.com/400" alt="Project 3" />
+          <h3>Portfolio Website</h3>
+          <p>
+            This is my personal portfolio website built using HTML, CSS, and
+            JavaScript. It showcases my skills, projects, and contact
+            information. I designed it to have a clean and modern look with a
+            sticky footer.
+          </p>
+        </div>
+
+        <!-- Add more projects here -->
+
+        <h2>Contact</h2>
+        <p>
+          If you'd like to get in touch, feel free to email me at
+          <a href="mailto:john.doe@example.com">john.doe@example.com</a> or
+          connect with me on
+          <a href="https://www.linkedin.com/in/johndoe" target="_blank"
+            >LinkedIn</a
+          >.
+        </p>
+        <p class="contact-links">
+          <a href="https://github.com/johndoe" target="_blank">GitHub</a>
+          <a href="https://twitter.com/johndoe" target="_blank">Twitter</a>
+        </p>
+      </main>
+    </div>
+    <footer>
+      <p>&copy; 2023 John Doe. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
